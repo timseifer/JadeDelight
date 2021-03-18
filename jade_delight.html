@@ -32,6 +32,7 @@ function makeSelect(name, minRange, maxRange)
 	t+= "</select>"; 
 	return t;
 }
+/* auixillary function */
 function getSelectValue(name){
 	var x = document.getElementsByName(name);
 	console.log(x);
@@ -71,8 +72,8 @@ function addIDS(){
 	}
 	console.log(document.getElementById("cost0"));
 }
+/* pops open a new window for reading */
 function popUp(text){
-
 var newWindow = window.open();
 newWindow .document.open()
 newWindow .document.write('<br>'+text)
@@ -127,6 +128,8 @@ function time(time_add){
 	
 	return (hours.toString() + ":" + minutes.toString());
 }
+
+/* Do validation on clicking the submit button */
 function validate(){
 	var values = document.getElementsByName("p_or_d");
 
